@@ -34,7 +34,7 @@ pipeline {
                                reportName: 'Extent Report'
                            ])
 
-                           junit 'test-output/testng-results.xml'
+                           junit 'target/surefire-reports/*.xml'
 
             echo 'Execution Completed'
         }
