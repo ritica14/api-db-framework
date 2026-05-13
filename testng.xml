@@ -1,8 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="API DB Suite">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
     <test name="API DB Test">
         <classes>
             <class name="test.APIDBTest"/>
         </classes>
+
     </test>
 </suite>
